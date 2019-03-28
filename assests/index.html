@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="../assests/css/style.css">
+    <!---links are at the top!-->
+
+    <title>TriviaGame</title>
+</head>
+
+<body>
+
+
+<!-- Main container, this manipulates box containing the title, questions, and answer choices -->
+    <div class="container">
+        <ul>
+            <div class="titleContainer">
+                <h1 id="title"> <s>Mick and Rorty Twisted Trivia!</s></h1>
+            </div>
+
+<!-- display the time remaining html, add the time counting down in the app.js  -->
+            <div id="countdownTimer">Time Remaining: </div>
+
+            <br>
+
+<!-- questions with selectable answer bubbles -->
+<!-- NOTE: make only one choice selectable, PER QUESTION -->
+            <div class="questionContainer">
+                <h3 id="question1"></h3>
+                <input type="radio" name="choice" value=" "> Male
+                <input type="radio" name="choice" value="female"> Female
+                <input type="radio" name="choice" value="female"> both
+                <input type="radio" name="choice" value="other"> All of The Above  
+            </div>
+
+            <div class="questionContainer">
+                <h3 id="question2"></h3>
+                <input type="radio" name="choice2" value=" "> Male
+                <input type="radio" name="choice2" value="female"> Female
+                <input type="radio" name="choice2" value="female"> both
+                <input type="radio" name="choice2" value="other"> All of The Above 
+            </div>
+
+            <div  class="questionContainer">
+                <h3 id="question3"></h3>
+                <input type="radio" name="choice3" value=" "> Male
+                <input type="radio" name="choice3" value="female"> Female
+                <input type="radio" name="choice3" value="female"> both
+                <input type="radio" name="choice3" value="other"> All of The Above 
+            </div>
+        </ul>
+    </div>
+
+
+    <!----bottom JavaScript-->
+    <!-- links = CSS, Script = Javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./javascript/app.js"></script>
+   
+</body>
+
+</html>
+
